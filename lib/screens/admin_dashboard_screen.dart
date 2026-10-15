@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/admin_products_panel.dart';
+import '../services/auth_service.dart';
 
 class AdminDashboardScreen extends StatefulWidget {
   const AdminDashboardScreen({super.key});
@@ -46,7 +47,10 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
         // Phone layout: AppBar + hamburger Drawer instead of a persistent sidebar
         return Scaffold(
           appBar: AppBar(
-            title: const Text('BabyShopHub Admin'),
+            title: const Text(
+              'BabyShopHub Admin',
+              style: TextStyle(color: Colors.white), // Added text color here
+            ),
             backgroundColor: const Color(0xFF1B2559),
           ),
           drawer: Drawer(child: _buildSidebar()),
@@ -97,7 +101,8 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
       onTap: () {
         if (index == -1) {
           // TODO: wire up to real logout once auth is in
-          Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
+          AuthService.instance.logout();
+          Navigator.pushNamedAndRemoveUntil(context, '/admin-login', (route) => false);
         } else {
           setState(() => _selectedIndex = index);
         }
