@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../utils/theme.dart'; // Import your colors from earlier
 import 'order_history_screen.dart';
+import 'reviews_screen.dart';
 
 
 class ProfileScreen extends StatefulWidget {
@@ -112,7 +113,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 icon: Icons.star_border, // Olive's module
                 title: 'Reviews & Ratings',
                 onTap: () {
-                  // TODO: Navigate to Reviews Screen
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const ReviewsScreen()),
+                  );
                 },
               ),
               _buildMenuItem(
