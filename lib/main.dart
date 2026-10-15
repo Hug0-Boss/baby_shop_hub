@@ -1,8 +1,13 @@
+import 'package:baby_shop_hub/screens/login_screen.dart';
+import 'package:baby_shop_hub/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/splash_screen.dart';
 import 'widgets/placeholder_screen.dart';
 import 'screens/admin_dashboard_screen.dart';
 
+import 'screens/admin_login_screen.dart';
+import 'services/auth_service.dart';
+import 'screens/profile_screen.dart';
 void main() {
   runApp(const BabyShopHubApp());
 }
@@ -17,12 +22,23 @@ class BabyShopHubApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: '/admin',
+
       routes: {
-        '/': (context) => const SplashScreen(),
+        '/admin-login': (context) => const AdminLoginScreen(),
+        // Only a signed-in admin sees the dashboard; anyone else gets the login screen
+        '/admin': (context) => AuthService.instance.isAdmin
+            ? const AdminDashboardScreen()
+            : const AdminLoginScreen(),
         // Swap these for Zizi's real screens once her branch merges
-        '/register': (context) => const PlaceholderScreen(title: 'Register'),
-        '/login': (context) => const PlaceholderScreen(title: 'Login'),
-        '/admin': (context) => const AdminDashboardScreen(),
+
+        // '/register': (context) => const PlaceholderScreen(title: 'Register'),
+        // '/login': (context) => const PlaceholderScreen(title: 'Login'),
+        // '/admin': (context) => const AdminDashboardScreen(),
+
+        '/register': (context) => const RegisterScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/profilescreen': (context) => const ProfileScreen(),
+
       },
     );
   }
