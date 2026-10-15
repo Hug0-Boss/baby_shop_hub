@@ -1,0 +1,35 @@
+Put one picture per product in this folder.
+Name each file with the product's id and .jpg (a .png renamed to .jpg also works).
+Keep each picture under about 300 KB (square, around 800 x 800 pixels is perfect).
+Missing pictures simply show the grey placeholder.
+
+File name -> product
+1.jpg -> Organic Cotton Baby Onesie
+2.jpg -> Sleep Suit
+3.jpg -> Cotton Onesie
+4.jpg -> Newborn Swaddle Blanket
+5.jpg -> Mittens and Cap Set
+6.jpg -> Knit Romper
+7.jpg -> Cute Bib Set
+8.jpg -> Denim Dungarees
+9.jpg -> Cotton Pyjama Set
+10.jpg -> Hooded Bath Towel
+11.jpg -> Soft Plush Bear
+12.jpg -> Wooden Stacking Blocks
+13.jpg -> Baby Rattle Set
+14.jpg -> Musical Activity Cube
+15.jpg -> Teething Ring Set
+16.jpg -> Soft Sole Leather Booties
+17.jpg -> Baby Booties
+18.jpg -> Toddler Sandals
+19.jpg -> First Walker Sneakers
+20.jpg -> Newborn Diapers 40 Pack
+21.jpg -> Size 1 Diapers 50 Pack
+22.jpg -> Size 2 Diapers 56 Pack
+23.jpg -> Gentle Baby Wipes 3 Pack
+24.jpg -> Reusable Cloth Diaper Set
+25.jpg -> Anti-Colic Feeding Bottle 240ml
+26.jpg -> Silicone Feeding Set
+27.jpg -> Sippy Cup with Handles
+28.jpg -> Baby Food Spoon Set
+29.jpg -> Milk Powder Dispenser

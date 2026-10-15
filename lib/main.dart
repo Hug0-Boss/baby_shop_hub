@@ -1,3 +1,4 @@
+import 'screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/splash_screen.dart';
 import 'widgets/placeholder_screen.dart';
@@ -16,13 +17,14 @@ class BabyShopHubApp extends StatelessWidget {
       title: 'BabyShopHub',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: '/admin',
+         initialRoute: '/home',
       routes: {
         '/': (context) => const SplashScreen(),
         // Swap these for Zizi's real screens once her branch merges
         '/register': (context) => const PlaceholderScreen(title: 'Register'),
         '/login': (context) => const PlaceholderScreen(title: 'Login'),
         '/admin': (context) => const AdminDashboardScreen(),
+        '/home': (context) => const HomeScreen(),
       },
     );
   }

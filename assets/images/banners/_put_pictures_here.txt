@@ -1,0 +1,6 @@
+Banner pictures for the Home carousel (small square pictures, about 400 x 400 pixels):
+
+clothing.jpg
+diapers.jpg
+toys.jpg
+feeding.jpg
