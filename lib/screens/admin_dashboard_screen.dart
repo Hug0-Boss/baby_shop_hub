@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/admin_products_panel.dart';
 import '../services/auth_service.dart';
+import '../widgets/admin_orders_panel.dart';
+import '../widgets/admin_users_panel.dart';
 
 class AdminDashboardScreen extends StatefulWidget {
   const AdminDashboardScreen({super.key});
@@ -131,9 +133,9 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
       case 1:
         return const AdminProductsPanel();
       case 2:
-        return const _ComingSoon(title: 'User management');
+        return const AdminUsersPanel();
       case 3:
-        return const _ComingSoon(title: 'Order management');
+        return const AdminOrdersPanel();
       default:
         return _buildOverview();
     }
@@ -178,7 +180,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 8),
-          const _SimpleListTile(title: '#BSH123456', subtitle: 'Nifemi Shotelu · Delivered'),
+          const _SimpleListTile(title: '#BSH123456', subtitle: 'Nifemi Sheteolu · Delivered'),
           const _SimpleListTile(title: '#BSH123455', subtitle: 'Tunde A. · Processing'),
           const _SimpleListTile(title: '#BSH123454', subtitle: 'Chioma K. · Shipped'),
         ],
@@ -262,21 +264,6 @@ class _SimpleListTile extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _ComingSoon extends StatelessWidget {
-  final String title;
-  const _ComingSoon({required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        '$title — coming next',
-        style: TextStyle(fontSize: 16, color: Colors.grey.shade600),
       ),
     );
   }

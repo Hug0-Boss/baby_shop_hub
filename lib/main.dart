@@ -38,6 +38,10 @@ class BabyShopHubApp extends StatelessWidget {
         '/register': (context) => const RegisterScreen(),
         '/login': (context) => const LoginScreen(),
         '/profilescreen': (context) => const ProfileScreen(),
+        '/splashscreen': (context) => const SplashScreen(),
+        '/trackorder': (context) => const PlaceholderScreen(title: 'Track Order'),
+        '/orderconfirmation': (context) => const PlaceholderScreen(title: 'Order Confirmation'),
+        '/orderhistory': (context) => const PlaceholderScreen(title: 'Order History'),
 
       },
     );

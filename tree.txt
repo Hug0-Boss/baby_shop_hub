@@ -1,0 +1,49 @@
+Folder PATH listing
+Volume serial number is 6E33-83D0
+C:\USERS\ADMIN\BABY_SHOP_HUB\LIB
+¦   main.dart
+¦   
++---models
+¦       admin_models.dart
+¦       app_user.dart
+¦       cart_item.dart
+¦       category.dart
+¦       delivery_address.dart
+¦       product.dart
+¦       
++---screens
+¦       admin_dashboard_screen.dart
+¦       admin_login_screen.dart
+¦       cart_screen.dart
+¦       checkout_screen.dart
+¦       login_screen.dart
+¦       order_confirmation_screen.dart
+¦       order_history_screen.dart
+¦       profile_screen.dart
+¦       register_screen.dart
+¦       splash_screen.dart
+¦       track_order_screen.dart
+¦       
++---services
+¦       admin_service.dart
+¦       api_client.dart
+¦       auth_service.dart
+¦       cart_service.dart
+¦       product_service.dart
+¦       
++---utils
+¦       api_config.dart
+¦       cart_styles.dart
+¦       format.dart
+¦       order_status.dart
+¦       theme.dart
+¦       
++---widgets
+        admin_orders_panel.dart
+        admin_products_panel.dart
+        admin_users_panel.dart
+        cart_item_tile.dart
+        pink_button.dart
+        placeholder_screen.dart
+        price_summary.dart
+        
